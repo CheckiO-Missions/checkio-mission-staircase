@@ -1,0 +1,51 @@
+<!-- Describe task in general -->
+
+<p style="text-align: justify;">
+    У простішій задачі <a target="_blank" href="https://py.checkio.org/en/mission/beat-the-previous/">Beat the previous</a> вас просили жадібно витягти строго зростаючу послідовність цілих чисел із заданого ряду <b>digits</b>. Наприклад, для <b>digits</b>, рівного <b>"31415926"</b>, масив {% if is_js %}{% else %} список{% endif %} <span>({% if is_js %}array{% else %}list{% endif %})</span> цілих чисел має бути <b>[3, 14, 15, 92]</b>, причому остання початкова цифра залишається невикористаною.  
+</p>
+
+<p style="text-align: justify;">
+    Всупереч інтуїції, можливість тактично пропустити деякі з <b>digits</b> за власним бажанням може призвести до того, що результуючий масив цілих чисел <span>{% if is_js %}array{% else %}list{% endif %}</span> цілих чисел може містити більше елементів, ніж список, побудований у попередній жадібній манері. Завдяки цій додатковій свободі, приклад рядка цифр <b>"31415926"</b> дозволить отримати результат <b>[3, 4, 5, 9, 26]</b> з одним елементом більше, ніж у жадібно побудованому розв'язку.
+</p>
+
+<p style="text-align: justify;">
+    Ваша функція повинна повертати довжину найбільшого <span>{% if is_js %}array{% else %}list{% endif %}</span> цілих чисел за зростанням, які можна отримати з <b>digits</b>. Зауважте, що ви можете пропустити один або декілька <b>digits</b> не лише між двома цілими числами, а й під час побудови кожного такого числа.
+</p>
+
+<!-- <p style="text-align: center;">
+    <img  title="example" src="{{MEDIA}}example.png" alt="example" style="max-height: 83px"/>
+</p> -->
+
+<!-- Explain input and output values -->
+<p>
+   <strong>Вхідні дані:</strong> Рядок <span>(str{% if is_js %}ing{% endif %})</span>.
+</p>
+
+<p>
+   <strong>Вихідні дані:</strong> Ціле число <span>({% if is_js %}number{% else %}int{% endif %})</span>. 
+</p>
+
+
+<p>
+    <strong>Приклади:</strong>
+</p>
+
+<pre class="brush: {% if is_js %}javascript{% else %}python{% endif %}">{{init_code_tmpl}}</pre>
+
+<!-- Here you can explain how it can be used in development -->
+<!-- The section is optional -->
+<!-- <p class="for_info_only">
+
+    <strong>How it’s used:</strong>
+    <i>(math is used everywhere)</i>
+</p> -->
+
+<!-- Here you can explain some constraints for input-->
+<!-- The section is optional -->
+<!-- <p>
+    <strong>Preconditions:</strong>
+    <ul>
+    <li><i>both given ints should be between -1000 and 1000</i></li>
+    </ul>
+</p> -->
+<p><i>Місія взята з сайту <span>Python CCPS 109</span>. Вона викладається для <span>Ryerson Chang School of Continuing Education</span> за допомогою <a href="https://github.com/ikokkari">Ilkka Kokkarinen</a></i></p>
