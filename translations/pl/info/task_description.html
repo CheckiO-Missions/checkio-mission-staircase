@@ -1,0 +1,51 @@
+<!-- Describe task in general -->
+
+<p style="text-align: justify;">
+    W łatwiejszym problemie <a target="_blank" href="https://py.checkio.org/en/mission/beat-the-previous/">Beat the previous</a> poproszono Pana o zachłanne wyodrębnienie ściśle rosnącego ciągu liczb całkowitych z podanej serii <b>digits</b>. Na przykład, dla <b>digits</b> równej <b>"31415926"</b>, tablica {% if is_js %}{% else %} lista{% endif %} <span>({% if is_js %}array{% else %}list{% endif %})</span> zwracanych liczb całkowitych powinna mieć postać <b>[3, 14, 15, 92]</b>, przy czym ostatnia oryginalna cyfra powinna pozostać niewykorzystana.  
+</p>
+
+<p style="text-align: justify;">
+    Nieco wbrew intuicji, możliwość taktycznego pominięcia niektórych elementów <b>digits</b> może pozwolić, aby wynikowa lista liczb całkowitych <span>{% if is_js %}array{% else %}list{% endif %}</span> liczb całkowitych może zawierać więcej elementów niż lista skonstruowana w poprzedni zachłanny sposób. Dzięki tej dodatkowej swobodzie, przykładowy ciąg cyfr <b>"31415926"</b> pozwoliłby na uzyskanie wyniku <b>[3, 4, 5, 9, 26]</b> z jednym elementem więcej niż chciwie skonstruowane rozwiązanie.
+</p>
+
+<p style="text-align: justify;">
+    Pana funkcja powinna zwrócić długość najdłuższej <span>{% if is_js %}array{% else %}list{% endif %}</span> rosnących liczb całkowitych, które można wyodrębnić z <b>digits</b>. Proszę zauważyć, że można pominąć jedną lub więcej <b>digits</b> nie tylko między dwiema wyodrębnianymi liczbami całkowitymi, ale także podczas konstruowania każdej takiej liczby całkowitej.
+</p>
+
+<!-- <p style="text-align: center;">
+    <img  title="example" src="{{MEDIA}}example.png" alt="example" style="max-height: 83px"/>
+</p> -->
+
+<!-- Explain input and output values -->
+<p>
+   <strong>Wejście:</strong> String <span>(str{% if is_js %}ing{% endif %})</span>.
+</p>
+
+<p>
+   <strong>Wyjście:</strong> Liczba całkowita <span>({% if is_js %}number{% else %}int{% endif %})</span>. 
+</p>
+
+
+<p>
+    <strong>Przykłady:</strong>
+</p>
+
+<pre class="brush: {% if is_js %}javascript{% else %}python{% endif %}">{{init_code_tmpl}}</pre>
+
+<!-- Here you can explain how it can be used in development -->
+<!-- The section is optional -->
+<!-- <p class="for_info_only">
+
+    <strong>How it’s used:</strong>
+    <i>(math is used everywhere)</i>
+</p> -->
+
+<!-- Here you can explain some constraints for input-->
+<!-- The section is optional -->
+<!-- <p>
+    <strong>Preconditions:</strong>
+    <ul>
+    <li><i>both given ints should be between -1000 and 1000</i></li>
+    </ul>
+</p> -->
+<p><i>Misja została pobrana z <span>Python CCPS 109</span>. Jest ona nauczana dla <span>Ryerson Chang School of Continuing Education</span> przez <a href="https://github.com/ikokkari">Ilkka Kokkarinen</a></i></p>
