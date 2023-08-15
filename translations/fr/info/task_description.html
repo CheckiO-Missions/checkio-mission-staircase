@@ -1,0 +1,51 @@
+<!-- Describe task in general -->
+
+<p style="text-align: justify;">
+    Le problème plus simple <a target="_blank" href="https://py.checkio.org/en/mission/beat-the-previous/">Beat the previous</a> vous demandait d'extraire avec avidité une séquence strictement croissante d'entiers à partir de la série donnée de <b>digits</b>. Par exemple, pour <b>digits</b> égal à <b>"31415926"</b>, le tableau {% if is_js %}liste{% else %}{% endif %} <span>({% if is_js %}array{% else %}list{% endif %})</span> d'entiers retournés devrait être <b>[3, 14, 15, 92]</b>, avec le dernier chiffre original inutilisé.  
+</p>
+
+<p style="text-align: justify;">
+    Allant quelque peu à l'encontre de l'intuition, la possibilité de sauter tactiquement certains des <b>digits</b> à volonté peut permettre au tableau <span>{% if is_js %}array{% else %}list{% endif %}</span> d'entiers qui en résulte peut contenir plus d'éléments que la liste construite de la manière la plus gourmande qui soit. Avec cette liberté supplémentaire, l'exemple de la chaîne de chiffres <b>"31415926"</b> permettrait d'obtenir le résultat <b>[3, 4, 5, 9, 26]</b> avec un élément de plus que la solution construite avec avidité.
+</p>
+
+<p style="text-align: justify;">
+    Votre fonction doit renvoyer la longueur du plus long <span>{% if is_js %}array{% else %}list{% endif %}</span> d'entiers ascendants pouvant être extraits de <b>digits</b>. Notez que vous êtes autorisé à sauter un ou plusieurs <b>digits</b> non seulement entre deux entiers extraits, mais aussi pendant la construction de chacun de ces entiers.
+</p>
+
+<!-- <p style="text-align: center;">
+    <img  title="example" src="{{MEDIA}}example.png" alt="example" style="max-height: 83px"/>
+</p> -->
+
+<!-- Explain input and output values -->
+<p>
+   <strong>Entrée:</strong> Chaîne <span>(str{% if is_js %}ing{% endif %})</span>.
+</p>
+
+<p>
+   <strong>Sortie:</strong> Entier <span>({% if is_js %}number{% else %}int{% endif %})</span>. 
+</p>
+
+
+<p>
+    <strong>Exemples:</strong>
+</p>
+
+<pre class="brush: {% if is_js %}javascript{% else %}python{% endif %}">{{init_code_tmpl}}</pre>
+
+<!-- Here you can explain how it can be used in development -->
+<!-- The section is optional -->
+<!-- <p class="for_info_only">
+
+    <strong>How it’s used:</strong>
+    <i>(math is used everywhere)</i>
+</p> -->
+
+<!-- Here you can explain some constraints for input-->
+<!-- The section is optional -->
+<!-- <p>
+    <strong>Preconditions:</strong>
+    <ul>
+    <li><i>both given ints should be between -1000 and 1000</i></li>
+    </ul>
+</p> -->
+<p><i>La mission est tirée de <span>Python CCPS 109</span>. Elle est enseignée à <span>Ryerson Chang School of Continuing Education</span> par <a href="https://github.com/ikokkari">Ilkka Kokkarinen</a></i></p>
